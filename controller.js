@@ -123,3 +123,40 @@ console.log(cart)
 
 //https://www.weatherapi.com/
 // 893b7179fa314d0b90b155024221812
+
+//http://api.weatherapi.com/v1/current.json?key=893b7179fa314d0b90b155024221812&q=Gujranwala&aqi=no
+
+const inner = document.querySelector('.carousel-inner');
+
+const fetchResults = async () =>{
+    let url =`http://api.weatherapi.com/v1/current.json?key=893b7179fa314d0b90b155024221812&q=Gujranwala&aqi=no`;
+
+    const res = await fetch(url);
+
+    const data2 = await res.json();
+
+    console.log(data2.current.temp_c);
+
+    console.log(data2.location.name);
+
+    const weatherDisplay = `
+    <div class="carousel-item active">
+    <div class="d-flex justify-content-between mb-4 pb-2">
+        <div>
+        <h2 class="display-2"><strong>${data2.current.temp_c}°C</strong></h2>
+        <p class="text-muted mb-0">${data2.location.name}</p>
+        </div>
+        <div>
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+            width="150px">
+        </div>
+    </div>
+    </div>
+    `;
+
+    inner.innerHTML = weatherDisplay;
+
+
+}
+
+fetchResults();
