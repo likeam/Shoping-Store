@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #f7f8fc;
+        font-family: "Roboto", sans-serif;
+        color: #10182f;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 1040px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 300px;
+    }
+    .card-header img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        min-height: 250px;
+    }
+
+    .tag {
+        background: #cccccc;
+        border-radius: 50px;
+        font-size: 12px;
+        margin: 0;
+        color: #fff;
+        padding: 2px 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .tag-teal {
+        background-color: #47bcd4;
+        }
+    .tag-purple {
+        background-color: #5e76bf;
+    }
+    .tag-pink {
+        background-color: #cd5b9f;
+    }
+
+    .card-body p {
+        font-size: 13px;
+        margin: 0 0 40px;
+    }
+    .user {
+        display: flex;
+        margin-top: auto;
+    }
+
+    .user img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .user-info h5 {
+        margin: 0;
+    }
+    .user-info small {
+        color: #545d7a;
+    }
+
+
+
+    .button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+    .container{
+        margin-top: 10vh;
+    }
+    header{
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 10vw;
+
+    }
+
+
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+    * {
+        font-family: Roboto;
+    }
+    
+    .footer-distributed{
+        display: grid;
+        grid-template-columns: 1fr;
+        background: #444;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        font: bold 16px sans-serif;
+        text-align: left;
+        padding: 50px 60px 40px;
+        overflow: hidden;
+    }
+    
+    /* section {
+      width: 100%;
+      display: grid;
+      grid-template-columns: ;
+      background: #ccc;
+      height: 60vh;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: underline;
+    } */
+    
+    
+    /* Footer left */
+    
+    .footer-distributed .footer-left{
+        float: left;
+    }
+    
+    /* The company logo */
+    
+    .footer-distributed h3{
+        color:  #ffffff;
+        font: normal 36px 'Roboto', cursive;
+        margin: 0 0 10px;
+    }
+    
+    .footer-distributed h3 span{
+        color:  #5383d3;
+    }
+    
+    /* Footer links */
+    
+    .footer-distributed .footer-links{
+        color:  #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    
+    .footer-distributed .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+    
+    .footer-distributed .footer-company-name{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    /* Footer social icons */
+    
+    .footer-distributed .footer-icons{
+        margin-top: 40px;
+    }
+    
+    .footer-distributed .footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+    
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+    
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+    
+    /* Footer Right */
+    
+    .footer-distributed .footer-right{
+        float: right;
+    }
+    
+    .footer-distributed .footer-right p{
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px 42px 0 0;
+        color: #ffffff;
+    }
+    
+    /* The contact form */
+    
+    .footer-distributed form{
+        display: inline-block;
+    }
+    
+    .footer-distributed form input,
+    .footer-distributed form textarea{
+        display: block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color:  #1f2022;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        border: none;
+        resize: none;
+    
+        font: inherit;
+        font-size: 14px;
+        font-weight: normal;
+        color:  #d1d2d2;
+    
+        width: 400px;
+        padding: 18px;
+    }
+    
+    .footer-distributed ::-webkit-input-placeholder {
+        color:  #5c666b;
+    }
+    
+    .footer-distributed ::-moz-placeholder {
+        color:  #5c666b;
+        opacity: 1;
+    }
+    
+    .footer-distributed :-ms-input-placeholder{
+        color:  #5c666b;
+    }
+    
+    
+    .footer-distributed form input{
+        height: 55px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-distributed form textarea{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-distributed form button{
+        border-radius: 3px;
+        background-color:  #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
+    
+    /* If you don't want the footer to be responsive, remove these media queries */
+    
+    @media (max-width: 1000px) {
+    
+        .footer-distributed {
+            font: bold 14px sans-serif;
+        }
+    
+        .footer-distributed .footer-company-name{
+            font-size: 12px;
+        }
+    
+        .footer-distributed form input,
+        .footer-distributed form textarea{
+            width: 250px;
+        }
+    
+        .footer-distributed form button{
+            padding: 10px 35px;
+        }
+    
+    }
+    
+    @media (max-width: 800px) {
+    
+        .footer-distributed{
+            padding: 30px;
+        }
+    
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-right{
+            float: none;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    
+        .footer-distributed .footer-left{
+            margin-bottom: 40px;
+        }
+    
+        .footer-distributed form{
+            margin-top: 30px;
+        }
+    
+        .footer-distributed form{
+            display: block;
+        }
+    
+        .footer-distributed form button{
+            float: none;
+        }
+    }
+    
