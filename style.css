@@ -114,16 +114,8 @@
         width: 10vw;
 
     }
-.gradient-custom {
-    /* fallback for old browsers */
-    background: #ffffff;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1))
-    }
+
+   
     
     .carousel-indicators li {
     background-color: #282828;
@@ -131,4 +123,31 @@
     height: 7px;
     border-radius: 50%;
     }
+
+    .footer{
+        height: 20vh;
+        background-color: #C1CFEA;
+        background-image: url('./img/Nishan-E-Manzil_Gujranwala_20140925.jpg');
+        background-repeat: no-repeat;
+        background-size: 30%;
+    }
+
+    /* .display-1{
+    
+        
+    } */
+    .display-2{
+       
+        color: darkslategrey;
+        padding-left: 15px;
+
+    }
+
+    .display-3{
+       
+        color: darkslategrey;
+
+        padding-left: 15px;
+    }
+    
     
